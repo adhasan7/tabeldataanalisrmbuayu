@@ -1,0 +1,330 @@
+<!DOCTYPE html>  
+<html lang="en">  
+  <head>  
+    <meta charset="UTF-8" />  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />  
+    <title>Document</title>  
+  </head>  
+  <style>
+     body {
+          font-family: Arial, sans-serif;
+          margin: 20px;
+        }
+        table {
+          width: 100%;
+          border-collapse: collapse;
+        }
+        th,
+        td {
+          padding: 12px;
+          text-align: left;
+          border-bottom: 1px solid #ddd;
+          font-size: 16px; /* Ukuran font default */
+        }
+        th {
+          background-color: #f2f2f2;
+        }
+        @media (max-width: 600px) {
+          table,
+          thead,
+          tbody,
+          th,
+          td,
+          tr {
+            display: block;
+            width: 100%;
+          }
+          thead tr {
+            position: absolute;
+            top: -9999px;
+            left: -9999px;
+          }
+          tr {
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+          }
+          td {
+            position: relative;
+            padding-left: 50%;
+            font-size: 10px; /* Ukuran font saat responsif */
+          }
+          td:before {
+            position: absolute;
+            top: 6px;
+            left: 6px;
+            width: 45%;
+            padding-right: 10px;
+            white-space: nowrap;
+            content: attr(data-label);
+            font-weight: bold; /* Menebalkan label */
+          }
+        }
+    P h1{
+        justify-content: center;
+    }
+  </style>
+  <body>  
+  
+    <table border="1">    
+        <thead>    
+            <tr>    
+                <th>No</th>    
+                <th>Kecamatan</th>    
+                <th>Laki-Laki</th>    
+                <th>Perempuan</th>    
+                <th>Jumlah</th>    
+                <th>Penyuka Warna</th>    
+                <th>Kecerahan Warna</th>    
+                <th>Pria yang Suka Warna</th>    
+                <th>Perempuan yang Suka Warna</th>    
+            </tr>    
+        </thead>    
+        <tbody>    
+            <tr>    
+                <td data-label="No">1</td>    
+                <td data-label="Kecamatan">WERU</td>    
+                <td data-label="Laki-Laki">29,651</td>    
+                <td data-label="Perempuan">29,844</td>    
+                <td data-label="Jumlah">59,495</td>    
+                <td data-label="Penyuka Warna">Biru</td>    
+                <td data-label="Kecerahan Warna">Cerah</td>    
+                <td data-label="Pria yang Suka Warna">15,000</td>    
+                <td data-label="Perempuan yang Suka Warna">14,500</td>    
+            </tr>    
+            <tr>    
+                <td data-label="No">2</td>    
+                <td data-label="Kecamatan">BULU</td>    
+                <td data-label="Laki-Laki">19,913</td>    
+                <td data-label="Perempuan">19,607</td>    
+                <td data-label="Jumlah">39,520</td>    
+                <td data-label="Penyuka Warna">Hijau</td>    
+                <td data-label="Kecerahan Warna">Cerah</td>    
+                <td data-label="Pria yang Suka Warna">10,000</td>    
+                <td data-label="Perempuan yang Suka Warna">9,500</td>    
+            </tr>    
+            <tr>    
+                <td data-label="No">3</td>    
+                <td data-label="Kecamatan">TAWANGSARI</td>    
+                <td data-label="Laki-Laki">21,011</td>    
+                <td data-label="Perempuan">28,804</td>    
+                <td data-label="Jumlah">57,815</td>    
+                <td data-label="Penyuka Warna">Merah</td>    
+                <td data-label="Kecerahan Warna">Cerah</td>    
+                <td data-label="Pria yang Suka Warna">12,000</td>    
+                <td data-label="Perempuan yang Suka Warna">11,000</td>    
+            </tr>    
+            <tr>    
+                <td data-label="No">4</td>    
+                <td data-label="Kecamatan">SUKOHARJO</td>    
+                <td data-label="Laki-Laki">49,004</td>    
+                <td data-label="Perempuan">49,004</td>    
+                <td data-label="Jumlah">98,004</td>    
+                <td data-label="Penyuka Warna">Putih</td>    
+                <td data-label="Kecerahan Warna">Cerah</td>    
+                <td data-label="Pria yang Suka Warna">25,000</td>    
+                <td data-label="Perempuan yang Suka Warna">25,000</td>    
+            </tr>    
+            <tr>    
+                <td data-label="No">5</td>    
+                <td data-label="Kecamatan">NGUTER</td>    
+                <td data-label="Laki-Laki">28,842</td>    
+                <td data-label="Perempuan">28,443</td>    
+                <td data-label="Jumlah">57,285</td>    
+                <td data-label="Penyuka Warna">Ung</td>    
+                <td data-label="Kecerahan Warna">Sedang</td>    
+                <td data-label="Pria yang Suka Warna">8,000</td>    
+                <td data-label="Perempuan yang Suka Warna">7,500</td>    
+            </tr>    
+            <tr>    
+                <td data-label="No">6</td>    
+                <td data-label="Kecamatan">BENDOSARI</td>    
+                <td data-label="Laki-Laki">32,558</td>    
+                <td data-label="Perempuan">32,702</td>    
+                <td data-label="Jumlah">65,260</td>    
+                <td data-label="Penyuka Warna">Kuning</td>    
+                <td data-label="Kecerahan Warna">Cerah</td>    
+                <td data-label="Pria yang Suka Warna">15,000</td>    
+                <td data-label="Perempuan yang Suka Warna">14,000</td>    
+            </tr>    
+            <tr>    
+                <td data-label="No">7</td>    
+                <td data-label="Kecamatan">POLOKARTO</td>    
+                <td data-label="Laki-Laki">43,865</td>    
+                <td data-label="Perempuan">43,746</td>    
+                <td data-label="Jumlah">87,611</td>    
+                <td data-label="Penyuka Warna">Abu-abu</td>    
+                <td data-label="Kecerahan Warna">Gelap</td>    
+                <td data-label="Pria yang Suka Warna">10,000</td>    
+                <td data-label="Perempuan yang Suka Warna">9,000</td>    
+            </tr>    
+            <tr>    
+                <td data-label="No">8</td>    
+                <td data-label="Kecamatan">MOJOLABAN</td>    
+                <td data-label="Laki-Laki">45,909</td>    
+                <td data-label="Perempuan">45,866</td>    
+                <td data-label="Jumlah">91,775</td>    
+                <td data-label="Penyuka Warna">Coklat</td>    
+                <td data-label="Kecerahan Warna">Sedang</td>    
+                <td data-label="Pria yang Suka Warna">12,000</td>    
+                <td data-label="Perempuan yang Suka Warna">11,000</td>    
+            </tr>    
+            <tr>    
+                <td data-label="No">9</td>    
+                <td data-label="Kecamatan">GROGOL</td>    
+                <td data-label="Laki-Laki">60,397</td>    
+                <td data-label="Perempuan">60,371</td>    
+                <td data-label="Jumlah">121,468</td>    
+                <td data-label="Penyuka Warna">Pink</td>    
+                <td data-label="Kecerahan Warna">Cerah</td>    
+                <td data-label="Pria yang Suka Warna">20,000</td>    
+                <td data-label="Perempuan yang Suka Warna">19,000</td>    
+            </tr>    
+            <tr>    
+                <td data-label="No">10</td>    
+                <td data-label="Kecamatan">BAKI</td>    
+                <td data-label="Laki-Laki">35,587</td>    
+                <td data-label="Perempuan">35,571</td>    
+                <td data-label="Jumlah">71,158</td>    
+                <td data-label="Penyuka Warna">Merah Muda</td>    
+                <td data-label="Kecerahan Warna">Cerah</td>    
+                <td data-label="Pria yang Suka Warna">10,000</td>    
+                <td data-label="Perempuan yang Suka Warna">9,500</td>    
+            </tr>    
+            <tr>    
+                <td data-label="No">11</td>    
+                <td data-label="Kecamatan">GATAK</td>    
+                <td data-label="Laki-Laki">26,635</td>    
+                <td data-label="Perempuan">25,643</td>    
+                <td data-label="Jumlah">52,278</td>    
+                <td data-label="Penyuka Warna">Hitam</td>    
+                <td data-label="Kecerahan Warna">Gelap</td>    
+                <td data-label="Pria yang Suka Warna">5,000</td>    
+                <td data-label="Perempuan yang Suka Warna">4,500</td>    
+            </tr>    
+            <tr>    
+                <td data-label="No">12</td>    
+                <td data-label="Kecamatan">KARTASURA</td>    
+                <td data-label="Laki-Laki">54,401</td>    
+                <td data-label="Perempuan">55,323</td>    
+                <td data-label="Jumlah">109,724</td>    
+                <td data-label="Penyuka Warna">Emas</td>    
+                <td data-label="Kecerahan Warna">Cerah</td>    
+                <td data-label="Pria yang Suka Warna">15,000</td>    
+                <td data-label="Perempuan yang Suka Warna">14,500</td>    
+            </tr>    
+        </tbody>    
+    </table>    
+    <br>
+    
+    <br>  
+    <p>  
+      <h1>Untuk menentukan warna dan kecerahan yang paling disukai oleh pria dan perempuan berdasarkan data yang diberikan, kita dapat menghitung jumlah penyuka warna untuk setiap kategori kecerahan. Berikut adalah langkah-langkahnya:  
+  
+        Kumpulkan Data: Ambil data dari tabel yang ada.  
+        Hitung Total untuk Setiap Warna dan Kecerahan: Kategorikan warna berdasarkan kecerahan (Cerah, Sedang, Gelap) dan jumlahkan penyuka warna dari pria dan perempuan.  
+        Hasil Analisis  
+        Warna Paling Disukai  
+        Cerah:  
+        Biru: 15,000 (Pria) + 14,500 (Perempuan) = 29,500  
+        Hijau: 10,000 + 9,500 = 19,500  
+        Merah: 12,000 + 11,000 = 23,000  
+        Putih: 25,000 + 25,000 = 50,000  
+        Kuning: 15,000 + 14,000 = 29,000  
+        Pink: 20,000 + 19,000 = 39,000  
+        Merah Muda: 10,000 + 9,500 = 19,500  
+        Emas: 15,000 + 14,500 = 29,500  
+        Sedang:  
+        Ung: 8,000 + 7,500 = 15,500  
+        Coklat: 12,000 + 11,000 = 23,000  
+        Gelap:  
+        Abu-abu: 10,000 + 9,000 = 19,000  
+        Hitam: 5,000 + 4,500 = 9,500  
+        Kecerahan Paling Disukai  
+        Cerah: Total = 29,500 + 19,500 + 23,000 + 50,000 + 29,000 + 39,000 + 19,500 + 29,500 = 239,000  
+        Sedang: Total = 15,500 + 23,000 = 38,500  
+        Gelap: Total = 19,000 + 9,500 = 28,500  
+        Kesimpulan  
+        Warna Paling Disukai: Putih (50,000)  
+        Kecerahan Paling Disukai: Cerah (239,000)</h1>  
+    </p>  
+    <br>  
+  
+  </body>  
+</html>  
+
+
+<!-- chart -->
+
+<!DOCTYPE html>  
+<html lang="id">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Hasil Analisis Warna Paling Disukai</title>  
+    <link rel="stylesheet" href="restab2.css">  
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>  
+    
+</head>  
+<body>  
+    <div class="container">  
+        <h2>Hasil Analisis Warna Paling Disukai</h2>  
+        <canvas id="myChart"></canvas>  
+    </div>  
+  
+    <script>  
+        const ctx = document.getElementById('myChart').getContext('2d');  
+        const myChart = new Chart(ctx, {  
+            type: 'bar',  
+            data: {  
+                labels: ['Biru', 'Hijau', 'Merah', 'Putih', 'Kuning', 'Pink', 'Merah Muda', 'Emas', 'Ung', 'Coklat', 'Abu-abu', 'Hitam'],  
+                datasets: [{  
+                    label: 'Jumlah Penyuka',  
+                    data: [29500, 19500, 23000, 50000, 29000, 39000, 19500, 29500, 15500, 23000, 19000, 9500], // Data sesuai analisis  
+                    backgroundColor: [  
+                        'rgba(54, 162, 235, 0.2)', // Biru  
+                        'rgba(75, 192, 192, 0.2)', // Hijau  
+                        'rgba(255, 99, 132, 0.2)', // Merah  
+                        'rgba(255, 206, 86, 0.2)', // Putih  
+                        'rgba(255, 159, 64, 0.2)', // Kuning  
+                        'rgba(255, 20, 147, 0.2)', // Pink  
+                        'rgba(255, 182, 193, 0.2)', // Merah Muda  
+                        'rgba(255, 215, 0, 0.2)', // Emas  
+                        'rgba(128, 0, 128, 0.2)', // Ung  
+                        'rgba(139, 69, 19, 0.2)', // Coklat  
+                        'rgba(169, 169, 169, 0.2)', // Abu-abu  
+                        'rgba(0, 0, 0, 0.2)' // Hitam  
+                    ],  
+                    borderColor: [  
+                        'rgba(54, 162, 235, 1)',  
+                        'rgba(75, 192, 192, 1)',  
+                        'rgba(255, 99, 132, 1)',  
+                        'rgba(255, 206, 86, 1)',  
+                        'rgba(255, 159, 64, 1)',  
+                        'rgba(255, 20, 147, 1)',  
+                        'rgba(255, 182, 193, 1)',  
+                        'rgba(255, 215, 0, 1)',  
+                        'rgba(128, 0, 128, 1)',  
+                        'rgba(139, 69, 19, 1)',  
+                        'rgba(169, 169, 169, 1)',  
+                        'rgba(0, 0, 0, 1)'  
+                    ],  
+                    borderWidth: 1  
+                }]  
+            },  
+            options: {  
+                scales: {  
+                    y: {  
+                        beginAtZero: true  
+                    }  
+                }  
+            }  
+        });  
+    </script>  
+    <br>
+    <h1>Untuk Kecerahan Warna yang disukai klik disini<a href="restab3">KLIK</a></h1>
+</body>  
+</html>  
+
+
+
+<!-- tutup chart -->

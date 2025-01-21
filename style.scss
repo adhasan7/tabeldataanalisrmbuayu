@@ -218,3 +218,50 @@ tr:nth-child(even) {
     -webkit-print-color-adjust: exact;
   }
 }
+
+h1,
+h2,
+p {
+  margin-bottom: 1rem; /* Jarak antar paragraf */
+  font-size: clamp(1.5rem, 4vw, 2rem); /* Ukuran font responsif */
+  color: #333; /* Warna teks */
+  text-align: center; /* Rata tengah */
+  line-height: 1.5; /* Jarak antar baris */
+  padding: 0 1rem; /* Jarak horizontal */
+  max-width: 80px; /* Lebar maksimum paragraf */
+  margin-left: auto; /* Rata kiri */
+  margin-right: auto; /* Rata kanan */
+  width: 400px;
+}
+/*  */
+.container {
+  max-width: 800px; /* Lebar maksimum kontainer */
+  margin: 0 auto; /* Rata tengah */
+  padding: 1rem; /* Jarak dalam kontainer */
+  font-size: clamp(1.2rem, 3vw, 1.5rem); /* Ukuran font responsif */
+  color: #333; /* Warna teks */
+  line-height: 1.6; /* Jarak antar baris */
+}
+
+h2 {
+  margin-bottom: 1rem; /* Jarak bawah judul */
+}
+
+p {
+  margin-bottom: 1rem; /* Jarak antar paragraf */
+
+  align-items: center;
+  text-align: justify;
+}
+
+ul {
+  list-style-type: none; /* Menghilangkan bullet */
+  padding: 0; /* Menghilangkan padding */
+}
+
+li {
+  margin-bottom: 0.5rem; /* Jarak antar item list */
+  font-weight: bold; /* Menebalkan teks */
+}
+
+/*  */

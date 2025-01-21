@@ -1,0 +1,16 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 kolom */
+  gap: 10px; /* Jarak antar gambar */
+}
+
+.grid-item img {
+  width: 100%; /* Mengisi lebar kolom */
+  height: auto; /* Mempertahankan rasio aspek */
+}
+
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr; /* 1 kolom saat responsif */
+  }
+}
